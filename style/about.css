@@ -1,0 +1,133 @@
+*{
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color:rgb(100, 92, 92) ;
+ }
+ body{
+   margin:0;
+  padding:0;
+ }
+.header{
+  width:100%;
+  height: 10% ;
+  left:0;
+  top:0;
+  background: hsla(193, 90%, 43%, 50%);
+  background-color: black;
+  position: fixed;
+  box-shadow: 0 0 3rem rgba(0,0,0,0,0.2);
+}
+
+
+/*link*/
+#unorder{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  margin:0;
+  padding: 0;
+}
+#list{
+  display: inline;
+  padding: 20px;
+  color: white;
+  }
+  /*link*/
+  #unorder #list a{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color:white;
+    transition: .5s;
+    padding: 5px 10px;
+  }
+  #unorder #list a:hover{
+    color:#2900ff;
+    background: white;
+  }
+  #unorder #list a:before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    border-width: 0 0 2px 2px;
+    transition: .5s;
+    opacity: 0;
+      }
+      #unorder #list a:hover:before{
+        bottom: -8px;
+        left:-16px;
+        opacity: 1;
+      }
+      #unorder #list a:after{
+        content: '';
+        position: absolute;
+        top: 12px;
+        right:12px;
+        width: 12px;
+        height: 12px;
+        border: 3px solid white;
+        border-width: 2px 2px 0 0;
+        transition: .5s;
+        opacity:0; 
+      }
+      #unorder #list a:hover:after{
+        top: -12px;
+        right:-16px;
+        opacity: 1;
+      }
+       #bgimage{
+        width: 100%;
+        height: 800px;
+       }
+	   
+	   #bgi{
+    filter: sepia(19%) opacity(87%) drop-shadow(-1px 2px 5px rgba(13,0,0,0.89));
+    -webkit-filter: sepia(19%) opacity(87%) drop-shadow(-1px 2px 5px rgba(13,0,0,0.89));
+    -moz-filter: sepia(19%) opacity(87%) drop-shadow(-1px 2px 5px rgba(13,0,0,0.89));
+    }
+	
+	
+.footer{
+        background-color: black;
+       } 
+	   
+	   
+//responsive	   
+@media screen and (max-width:600px)
+    {
+    header{
+    width:100%;
+    }
+    }
+@media screen and (max-width:600px)
+       { 
+	   .page{
+        width: 250%;
+       }
+       }
+@media screen and (max-width:600px)
+       { 
+       .team,.row{
+       width: 250%;
+       }
+       }
+
+
+@media screen and (max-width:600px)
+       { 
+       .footer{
+       width:250%;
+       }
+       }  
+  
+        
+ 
